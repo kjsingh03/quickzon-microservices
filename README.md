@@ -234,7 +234,7 @@ node_modules
 ## Installation
 
 ```
-npm install express redis amqplib dotenv cors bcryptjs cloudinary cookie-parser jsonwebtoken mongoose multer nodemailer razorpay socket.io zod uuid prisma
+npm install express redis amqplib dotenv cors bcryptjs cloudinary cookie-parser jsonwebtoken mongoose multer nodemailer razorpay socket.io zod uuid prisma ioredis
 
 npm install -D nodemon @types/node @types/express @types/cors @types/cookie-parser @types/jsonwebtoken @types/bcryptjs @types/multer
 ```

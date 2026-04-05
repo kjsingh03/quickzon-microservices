@@ -6,20 +6,20 @@ services:
     ports:
       - "6379:6379"
 
-  postgres:
-    image: postgres
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: pass
-      POSTGRES_DB: quickcommerce
-    ports:
-      - "5432:5432"
+  # postgres:
+  #   image: postgres
+  #   environment:
+  #     POSTGRES_USER: user
+  #     POSTGRES_PASSWORD: pass
+  #     POSTGRES_DB: quickcommerce
+  #   ports:
+  #     - "5432:5432"
 
-  rabbitmq:
-    image: rabbitmq:3-management
-    ports:
-      - "5672:5672"
-      - "15672:15672"
+  # rabbitmq:
+  #   image: rabbitmq:3-management
+  #   ports:
+  #     - "5672:5672"
+  #     - "15672:15672"
 
   product-service-ts:
     build: ./services/product-service-ts
