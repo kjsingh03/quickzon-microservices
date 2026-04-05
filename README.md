@@ -69,6 +69,9 @@ uvicorn
 numpy
 pandas
 scikit-learn
+grpcio
+kafka-python
+strawberry-graphql
 ```
 
 ---
@@ -234,7 +237,7 @@ node_modules
 ## Installation
 
 ```
-npm install express redis amqplib dotenv cors bcryptjs cloudinary cookie-parser jsonwebtoken mongoose multer nodemailer razorpay socket.io zod uuid prisma ioredis
+npm install express redis amqplib dotenv cors bcryptjs cloudinary cookie-parser jsonwebtoken mongoose multer nodemailer razorpay socket.io zod uuid prisma @prisma/client ioredis graphql @apollo/server @grpc/grpc-js @grpc/proto-loader body-parser kafkajs
 
 npm install -D nodemon @types/node @types/express @types/cors @types/cookie-parser @types/jsonwebtoken @types/bcryptjs @types/multer
 ```
@@ -323,7 +326,7 @@ CMD ["./main"]
 ## Installation
 
 ```
-go get github.com/gin-gonic/gin github.com/redis/go-redis/v9 github.com/joho/godotenv github.com/jackc/pgx/v5 github.com/gin-contrib/cors github.com/rabbitmq/amqp091-go github.com/google/uuid
+go get github.com/gin-gonic/gin github.com/redis/go-redis/v9 github.com/joho/godotenv github.com/jackc/pgx/v5 github.com/gin-contrib/cors github.com/rabbitmq/amqp091-go github.com/google/uuid google.golang.org/grpc google.golang.org/protobuf github.com/segmentio/kafka-go
 ```
 
 ---
