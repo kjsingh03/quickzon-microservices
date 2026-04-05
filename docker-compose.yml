@@ -15,11 +15,11 @@ services:
   #   ports:
   #     - "5432:5432"
 
-  # rabbitmq:
-  #   image: rabbitmq:3-management
-  #   ports:
-  #     - "5672:5672"
-  #     - "15672:15672"
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
 
   product-service-ts:
     build: ./services/product-service-ts
@@ -29,6 +29,7 @@ services:
       - PORT=5001
     depends_on:
       - redis
+      - rabbitmq
 
   # product-service-go:
   #   build: ./services/product-service-go
