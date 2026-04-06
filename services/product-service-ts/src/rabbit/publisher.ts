@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto";
-import { rabbit } from "./rabbit";
-import { EXCHANGES } from "./consts";
-import { Envelope } from "./types";
+import { rabbit } from "./rabbit.js";
+import { EXCHANGES } from "./consts.js";
+import { Envelope } from "./types.js";
 
 export async function publishUserSignupEvent(input: {
   userId: string;

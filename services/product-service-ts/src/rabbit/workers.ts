@@ -1,8 +1,8 @@
 import { ConsumeMessage } from "amqplib";
-import { rabbit } from "./rabbit";
-import { getRedis } from "./redis";
-import { IDEMPOTENCY_DONE_TTL_SEC, IDEMPOTENCY_LOCK_TTL_SEC, MAX_RETRIES, QUEUES, } from "./consts";
-import { Envelope, FatalError, RetryableError } from "./types";
+import { rabbit } from "./rabbit.js";
+import { getRedis } from "./redis.js";
+import { IDEMPOTENCY_DONE_TTL_SEC, IDEMPOTENCY_LOCK_TTL_SEC, MAX_RETRIES, QUEUES, } from "./consts.js";
+import { Envelope, FatalError, RetryableError } from "./types.js";
 
 function safeJsonParse<T>(buf: Buffer): T {
     return JSON.parse(buf.toString("utf8")) as T;

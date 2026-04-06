@@ -1,7 +1,7 @@
 import amqp from "amqplib";
 import type { ConfirmChannel, Connection, Channel, ChannelModel } from "amqplib";
 import { once } from "node:events";
-import { AMQP_URL, EXCHANGES, QUEUES, ROUTING_KEYS, RETRY_TTL_MS, } from "./consts";
+import { AMQP_URL, EXCHANGES, QUEUES, ROUTING_KEYS, RETRY_TTL_MS, } from "./consts.js";
 
 type QueueSpec = {
     mainQueue: string;

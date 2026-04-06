@@ -1,7 +1,7 @@
-import { rabbit } from "./rabbit";
-import { getRedis, closeRedis } from "./redis";
-import { publishUserSignupEvent } from "./publisher";
-import { startAnalyticsWorker, startLoggingWorker, startEmailWorker } from "./workers";
+import { rabbit } from "./rabbit.js";
+import { getRedis, closeRedis } from "./redis.js";
+import { publishUserSignupEvent } from "./publisher.js";
+import { startAnalyticsWorker, startLoggingWorker, startEmailWorker } from "./workers.js";
 
 async function main() {
     await getRedis();
