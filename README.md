@@ -237,7 +237,7 @@ node_modules
 ## Installation
 
 ```
-npm install express redis amqplib dotenv cors bcryptjs cloudinary cookie-parser jsonwebtoken mongoose multer nodemailer razorpay socket.io zod uuid prisma @prisma/client ioredis graphql @apollo/server @grpc/grpc-js @grpc/proto-loader body-parser kafkajs
+npm install express redis amqplib dotenv cors axios bcryptjs cloudinary cookie-parser jsonwebtoken mongoose multer nodemailer razorpay socket.io zod uuid prisma @prisma/client ioredis graphql @apollo/server @as-integrations/express5 @grpc/grpc-js @grpc/proto-loader body-parser kafkajs
 
 npm install -D nodemon @types/node @types/express @types/cors @types/cookie-parser @types/jsonwebtoken @types/bcryptjs @types/multer @types/amqplib
 ```
