@@ -2,10 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@as-integrations/express5';
-import { typeDefs } from './templates/graphql/test/schemas/schema.js';
-import { resolvers } from './templates/graphql/test/config/rersolvers.js';
-import { TODOS } from './templates/graphql/test/data/todo.js';
-import { USERS } from './templates/graphql/test/data/user.js';
+import { TODOS } from './test/data/todo.js';
+import { USERS } from './test/data/user.js';
 
 const app = express();
 

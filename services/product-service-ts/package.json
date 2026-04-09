@@ -26,6 +26,7 @@
     "cloudinary": "^2.9.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
+    "dataloader": "^2.2.3",
     "dotenv": "^17.4.0",
     "express": "^5.2.1",
     "graphql": "^16.13.2",
